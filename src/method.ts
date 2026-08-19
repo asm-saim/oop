@@ -1,20 +1,3 @@
-// class
-//   ↓
-// Blueprint
-
-// constructor
-//   ↓
-// Initializes the object
-
-// new
-//   ↓
-// Creates an object/instance
-
-// this
-//   ↓
-// Refers to the current object
-
-
 //class:
 class Student {
   name: string;
@@ -27,9 +10,16 @@ class Student {
     this.roll = roll;
     this.email = email;
   }
+
+  //method:
+  getInfo(): string {
+    const info = `Name: ${this.name} \nEmail: ${this.email}`;
+    return info;
+  }
 }
 
 //Now instantiate the class, to get instance(OBJECT)
 let alice = new Student("Alice", 23, "alice@gmail.com"); //instantiate
 let jk = new Student("jk", 34, "jk@gmail.com"); //instantiate
 console.log(alice, jk);
+console.log(alice.getInfo());
