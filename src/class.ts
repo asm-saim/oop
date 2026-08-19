@@ -1,11 +1,18 @@
 //class:
 class Student {
-  name: string = "Alice";
-  roll: number = 34;
-  email: string = "alice@gmail.com";
+  name: string;
+  roll: number;
+  email: string;
+
+  //constructor: special method (It is a type of function )
+  constructor(name: string, roll: number, email: string) {
+    this.name = name;
+    this.roll = roll;
+    this.email = email;
+  }
 }
 
 //Now instantiate the class, to get instance(OBJECT)
-
-let alice = new Student(); //instantiate
-console.log(alice);
+let alice = new Student("Alice", 23, "alice@gmail.com"); //instantiate
+let jk = new Student("jk", 34, "jk@gmail.com"); //instantiate
+console.log(alice, jk);
