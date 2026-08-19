@@ -1,4 +1,4 @@
-//access modifier: public, private , protected
+//access modifier: It maintains data security. (public, private , protected)
 
 class BikashInfo {
   public number: string;
@@ -12,9 +12,19 @@ class BikashInfo {
     this.pin = pin;
     this.balance = balance;
   }
+
+  //method:
+  getBalance(pin: number) {
+    if (this.pin === pin) {
+      return this.balance;
+    }
+    return `PIN is not matched`;
+  }
 }
 
-const info1 = new BikashInfo("01719191911", 23334, 5000);
+const info1 = new BikashInfo("01719191911", 123, 5000);
 
 // info1.balance = 0;
 console.log(info1);
+
+console.log(info1.getBalance(123))
