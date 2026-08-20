@@ -1,3 +1,5 @@
+//inheritance: uttoradhikar sutre pawa . (extends)
+
 //super set
 class User {
   private _name: string;
@@ -25,4 +27,4 @@ class Student extends User {
 const user1 = new User("Khabib", 23, "khabib@gmail.com"); //instance
 
 const user2 = new Student("Islam", 273, "makachev@gmail.com", 25); //instance
-console.log(user2)
+console.log(user2);
